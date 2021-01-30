@@ -1,0 +1,28 @@
+[
+	{
+		"Candyid":"1",
+		"CandyName": "Oreo",
+		"CandyPrice":"4"
+	},
+	{
+		"Candyid":"2",
+		"CandyName":"skittles",	
+		"CandyPrice":"8"
+	},
+	{
+		"Candyid":"3",
+		"CandyName":"Bueno",
+		"CandyPrice":"3"
+	},
+	{
+		"Candyid":"4",
+		"CandyName":"M&M",	
+		"CandyPrice":"5"
+	},
+	{
+		"Candyid":"5",
+		"CandyName":"Test",	
+		"CandyPrice":"6"
+	}
+
+]
