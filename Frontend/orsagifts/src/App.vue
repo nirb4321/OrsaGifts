@@ -1,28 +1,18 @@
 <template>
-  <img alt="Vue logo" src="./assets/orsalogo.png">
-  <Orders v-bind:orders="orders"/>
+<Home/>
+  <div id="nav">
+    <router-link to="/gallery">גלריה</router-link>
+    |
+    <router-link to="/neworder">הזמן עכשיו</router-link>
+  </div>
+  <router-view/>
 </template>
 
 <script>
-import Orders from './components/Order.vue'
-import axios from 'axios'
-
+import Home from './views/Home'
 export default {
-  name: 'App',
   components: {
-    Orders
-  },
-
-
-  data(){
-    return{
-      orders:null
-    }
-  },
-
-
-  mounted: function () {
-    axios.get('http://localhost:3000/order/all').then(response => this.orders = response.data);
+    Home
   }
 }
 </script>
@@ -34,6 +24,18 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+}
+
+#nav {
+  padding: 30px;
+}
+
+#nav a {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+#nav a.router-link-exact-active {
+  color: #42b983;
 }
 </style>
