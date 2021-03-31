@@ -1,5 +1,3 @@
 <template>
-  <div class="about">
-    <h1>הזמן עכשיו</h1>
-  </div>
+  <h1>הזמנה חדשה </h1>
 </template>

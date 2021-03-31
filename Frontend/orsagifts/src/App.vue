@@ -1,21 +1,28 @@
 <template>
-<Home/>
-  <div id="nav">
-    <router-link to="/gallery">גלריה</router-link>
-    |
-    <router-link to="/neworder">הזמן עכשיו</router-link>
+  <div id="app">
+    <div id="nav">
+      <div class="logo">
+          <img alt="orsa logo" src="./assets/Logo/orsalogo.png">
+      </div>
+          <HelloWorld msg="Welcome to Your Vue.js App"/>
+      <router-link to="/neworder">הזמן עכשיו</router-link> |
+      <router-link to="/gallery">גלריה</router-link>
+    </div>
+    <router-view/>
   </div>
-  <router-view/>
 </template>
 
 <script>
-import Home from './views/Home'
+import HelloWorld from '@/components/HelloWorld.vue'
+
 export default {
+  name: 'Home',
   components: {
-    Home
+    HelloWorld,
   }
 }
 </script>
+
 
 <style>
 #app {
@@ -37,5 +44,11 @@ export default {
 
 #nav a.router-link-exact-active {
   color: #42b983;
+}
+
+.logo{  
+ width: auto ;
+  max-width: 100% ;
+  height: auto ;
 }
 </style>
